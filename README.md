@@ -16,3 +16,25 @@ The My-Card website project is a simple yet elegant way to create and share your
 * HTML 🌐
 * CSS 🎨
 * JavaScript 🧠
+
+### Folder Structure 📁📂✨
+
+```
+.
+├── assets
+│   ├── css
+│   │   └── style.css
+│   ├── js
+│   │   ├── script.js
+│   │   └── utils.js
+│   └── svg
+│       ├── fb.svg
+│       ├── insta.svg
+│       ├── my-avatar.svg
+│       ├── vite.svg
+│       └── yt.svg
+├── index.html
+├── package.json
+├── README.md
+└── replit.nix
+```

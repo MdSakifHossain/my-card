@@ -1,4 +1,4 @@
-# My-Card Project 💻✨
+# My-Card 💻📱✨
 
 ### Project Overview 🎉
 

@@ -1,4 +1,4 @@
-## My-Card Website Project 💻✨
+# My-Card Project 💻✨
 
 ### Project Overview 🎉
 
@@ -16,10 +16,3 @@ The My-Card website project is a simple yet elegant way to create and share your
 * **Frontend:** HTML 🌐, CSS 🎨, JavaScript 🧠
 * **Backend:** Node.js ⚙️, Express.js 🚀
 * **Database:** MongoDB 💾
-
-### Installation 🔨
-
-```bash
-git clone https://github.com/MdSakifHossain/my-card
-cd my-card
-```

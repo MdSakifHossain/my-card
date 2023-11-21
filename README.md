@@ -13,6 +13,6 @@ The My-Card website project is a simple yet elegant way to create and share your
 
 ### Technology Stack 💪
 
-* **Frontend:** HTML 🌐, CSS 🎨, JavaScript 🧠
-* **Backend:** Node.js ⚙️, Express.js 🚀
-* **Database:** MongoDB 💾
+* HTML 🌐
+* CSS 🎨
+* JavaScript 🧠

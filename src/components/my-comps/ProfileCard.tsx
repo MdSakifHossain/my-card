@@ -8,12 +8,14 @@ const ProfileCard = ({ config }) => {
       <CardHeader>
         <img src="/my-avatar.svg" alt="avatar" className="mx-auto w-[75%]" />
       </CardHeader>
+
       <CardContent className="flex flex-col gap-1.5">
-        <h1 className="text-center text-2xl font-semibold">{config?.title}</h1>
+        <h1 className="text-center text-2xl tracking-wide">{config?.title}</h1>
         <p className="text-center text-muted-foreground">
           {config?.description}
         </p>
       </CardContent>
+
       <CardFooter className="flex flex-col items-center justify-center gap-6">
         <div className="flex w-full items-center justify-center gap-6">
           {config?.socials?.map((item) => (

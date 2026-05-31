@@ -4,7 +4,7 @@ import { IconCircleCheckFilled, IconCopy } from "@tabler/icons-react"
 
 const config = {
   number: "01910711585",
-  copy_reset_time: 1000,
+  copy_reset_time: 500,
 }
 
 const BkashButton = () => {

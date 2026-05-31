@@ -18,6 +18,7 @@ const BkashButton = () => {
     <Button
       variant="default"
       className="w-full py-4 font-semibold"
+      size="lg"
       onClick={() => handleClick()}
     >
       {copied ? (

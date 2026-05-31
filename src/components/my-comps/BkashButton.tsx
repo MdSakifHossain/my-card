@@ -20,6 +20,7 @@ const BkashButton = () => {
       className="w-full py-4 font-semibold"
       size="lg"
       onClick={() => handleClick()}
+      disabled={copied}
     >
       {copied ? (
         <IconCircleCheckFilled className="size-4" />

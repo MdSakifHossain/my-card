@@ -132,3 +132,12 @@
     @apply font-sans;
     }
 }
+
+.retro-shadow {
+  box-shadow: 4px 4px 0 var(--primary);
+}
+
+.retro-shadow-sm {
+  box-shadow: 2px 2px 0 var(--primary);
+}
+

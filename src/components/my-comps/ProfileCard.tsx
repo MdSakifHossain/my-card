@@ -4,7 +4,7 @@ import BkashButton from "./BkashButton"
 
 const ProfileCard = ({ config }) => {
   return (
-    <Card className="w-full border-2 bg-foreground/10 shadow-lg backdrop-blur-2xl sm:w-sm">
+    <Card className="retro-shadow w-full border-3 shadow-lg sm:w-sm">
       <CardHeader>
         <img src="/my-avatar.svg" alt="avatar" className="mx-auto w-[75%]" />
       </CardHeader>
@@ -21,7 +21,7 @@ const ProfileCard = ({ config }) => {
               key={item.id}
               href={item.url}
               target="_blank"
-              className="rounded-md border border-foreground p-1.5 dark:border-muted-foreground"
+              className="retro-shadow-sm rounded-md border border-foreground p-1.5 dark:border-muted-foreground"
             >
               {item.icon}
             </a>

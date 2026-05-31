@@ -1,5 +1,6 @@
 // @ts-nocheck
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card"
+import BkashButton from "./BkashButton"
 
 const ProfileCard = ({ config }) => {
   return (
@@ -14,7 +15,7 @@ const ProfileCard = ({ config }) => {
         </p>
       </CardContent>
       <CardFooter className="flex flex-col items-center justify-center gap-6">
-        <div className="flex w-full items-center justify-around">
+        <div className="flex w-full items-center justify-center gap-6">
           {config?.socials?.map((item) => (
             <a key={item.id} href={item.url} target="_blank">
               <img
@@ -25,6 +26,7 @@ const ProfileCard = ({ config }) => {
             </a>
           ))}
         </div>
+        <BkashButton />
       </CardFooter>
     </Card>
   )

@@ -29,12 +29,6 @@ export const config = {
             iconName: "github",
             url: "https://github.com/MdSakifHossain",
         },
-        {
-            id: 4,
-            name: "Bkash",
-            iconName: "bkash",
-            url: "01910711585"
-        }
     ]
 
 }

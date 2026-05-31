@@ -4,12 +4,12 @@ import BkashButton from "./BkashButton"
 
 const ProfileCard = ({ config }) => {
   return (
-    <Card className="w-full border-2 shadow-lg sm:w-sm">
+    <Card className="w-full border-2 bg-foreground/10 shadow-lg backdrop-blur-2xl sm:w-sm">
       <CardHeader>
         <img src="/my-avatar.svg" alt="avatar" className="mx-auto w-[75%]" />
       </CardHeader>
       <CardContent className="flex flex-col gap-1.5">
-        <h1 className="text-center text-2xl">{config?.title}</h1>
+        <h1 className="text-center text-2xl font-semibold">{config?.title}</h1>
         <p className="text-center text-muted-foreground">
           {config?.description}
         </p>
@@ -17,12 +17,13 @@ const ProfileCard = ({ config }) => {
       <CardFooter className="flex flex-col items-center justify-center gap-6">
         <div className="flex w-full items-center justify-center gap-6">
           {config?.socials?.map((item) => (
-            <a key={item.id} href={item.url} target="_blank">
-              <img
-                src={`/icons/${item.iconName}.svg`}
-                alt="facebook"
-                className="size-7"
-              />
+            <a
+              key={item.id}
+              href={item.url}
+              target="_blank"
+              className="rounded-md border border-foreground p-1.5 dark:border-muted-foreground"
+            >
+              {item.icon}
             </a>
           ))}
         </div>

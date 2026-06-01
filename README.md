@@ -1,21 +1,7 @@
-# React + TypeScript + Vite + shadcn/ui
+# My Card
 
-This is a template for a new Vite project with React, TypeScript, and shadcn/ui.
+_React + TypeScript + Vite + shadcn/ui + Heavy Personal Touch_
 
-## Adding components
+This is a template for a Virtual Personal Profile Card with All my social media links
 
-To add components to your app, run the following command:
-
-```bash
-npx shadcn@latest add button
-```
-
-This will place the ui components in the `src/components` directory.
-
-## Using components
-
-To use the components in your app, import them as follows:
-
-```tsx
-import { Button } from "@/components/ui/button"
-```
+## **[Live Link](https://sakifhossain.netlify.app)** 🚀

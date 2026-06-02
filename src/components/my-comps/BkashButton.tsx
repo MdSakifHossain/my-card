@@ -19,15 +19,9 @@ const openBkashApp = () => {
 
   if (!isAndroid && !isIOS) return
 
-  window.location.href = "bkash://"
-
-  setTimeout(() => {
-    if (isAndroid) {
-      window.location.href = config.android_link
-    } else if (isIOS) {
-      window.location.href = config.ios_link
-    }
-  }, config.deep_link_fallback_delay)
+  // Bkash backend handles Redirection logic;
+  // this code just triggers 'Bkash App Opening Redirection'
+  window.location.href = "https://bka.sh/dlwb"
 }
 
 const BkashButton = () => {

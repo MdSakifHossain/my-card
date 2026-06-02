@@ -5,6 +5,29 @@ import { IconCircleCheckFilled, IconCopy } from "@tabler/icons-react"
 const config = {
   number: "01910711585",
   copy_reset_time: 500,
+  deep_link_fallback_delay: 2000,
+  android_link:
+    "https://play.google.com/store/apps/details?id=com.bKash.customerapp",
+  ios_link: "https://apps.apple.com/us/app/bkash/id1351183172",
+}
+
+const openBkashApp = () => {
+  const userAgent = navigator.userAgent
+
+  const isAndroid = /android/i.test(userAgent)
+  const isiOS = /iPad|iPhone|iPod/.test(userAgent)
+
+  if (!isAndroid && !isiOS) return
+
+  window.location.href = "bkash://"
+
+  setTimeout(() => {
+    if (isAndroid) {
+      window.location.href = config.android_link
+    } else if (isiOS) {
+      window.location.href = config.ios_link
+    }
+  }, config.deep_link_fallback_delay)
 }
 
 const BkashButton = () => {
@@ -12,6 +35,7 @@ const BkashButton = () => {
 
   const handleClick = async () => {
     copyToClipboard(config.number, "Could not Copy Bkash Number")
+    openBkashApp()
   }
 
   return (

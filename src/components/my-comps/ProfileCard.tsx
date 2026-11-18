@@ -6,7 +6,7 @@ import BkashButton from "./BkashButton"
 
 const ProfileCard = ({ config }) => {
   return (
-    <Card className="retro-shadow w-full border-3 shadow-lg sm:w-sm">
+    <Card className="retro-shadow w-full border-3 shadow-lg select-none sm:w-sm">
       <CardHeader>
         <img src="/my-avatar.svg" alt="avatar" className="mx-auto w-[75%]" />
       </CardHeader>

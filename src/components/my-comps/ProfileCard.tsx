@@ -41,7 +41,7 @@ const ProfileCard = ({ config }) => {
                 <IconBrandGoogleDrive /> Shared Bucket
               </Button>
             </a>
-            <Button variant={"outline"}>
+            <Button variant={"outline"} disabled>
               <IconCloudComputing /> Umbrella Cloud
             </Button>
           </div>

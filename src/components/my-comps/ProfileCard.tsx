@@ -1,5 +1,7 @@
 // @ts-nocheck
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card"
+import { IconBrandGoogleDrive, IconCloudComputing } from "@tabler/icons-react"
+import { Button } from "../ui/button"
 import BkashButton from "./BkashButton"
 
 const ProfileCard = ({ config }) => {
@@ -16,7 +18,7 @@ const ProfileCard = ({ config }) => {
         </p>
       </CardContent>
 
-      <CardFooter className="flex flex-col items-center justify-center gap-6">
+      <CardFooter className="flex flex-col items-center justify-center gap-8">
         <div className="flex w-full items-center justify-center gap-6">
           {config?.socials?.map((item) => (
             <a
@@ -29,7 +31,21 @@ const ProfileCard = ({ config }) => {
             </a>
           ))}
         </div>
-        <BkashButton />
+
+        <div className="flex w-full flex-col items-center justify-center gap-4">
+          <BkashButton />
+
+          <div className="grid w-full grid-cols-2 gap-4">
+            <a href={config?.sharedBucketLink} target="_blank">
+              <Button className={"w-full"} variant={"outline"}>
+                <IconBrandGoogleDrive /> Shared Bucket
+              </Button>
+            </a>
+            <Button variant={"outline"}>
+              <IconCloudComputing /> Umbrella Cloud
+            </Button>
+          </div>
+        </div>
       </CardFooter>
     </Card>
   )

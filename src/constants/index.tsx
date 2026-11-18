@@ -36,4 +36,6 @@ export const config = {
       url: "https://github.com/MdSakifHossain",
     },
   ],
+  sharedBucketLink:
+    "https://drive.google.com/drive/folders/1HDWy7BnqHFzrHAZuyaQNBDyrYFzhWMEv?usp=sharing",
 }

@@ -1,6 +1,6 @@
 import { useCopyToClipboard } from "@/hooks/useCopyToClipboard"
-import { Button } from "../ui/button"
 import { IconCircleCheckFilled, IconCopy } from "@tabler/icons-react"
+import { Button } from "../ui/button"
 
 const config = {
   number: "01910711585",
@@ -47,7 +47,7 @@ const BkashButton = () => {
       ) : (
         <IconCopy className="size-4" />
       )}
-      {copied ? "Copied!" : "Copy Bkash Number"}
+      {copied ? "Copied!" : "Pay me (Bkash)"}
     </Button>
   )
 }
